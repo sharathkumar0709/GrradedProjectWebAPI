@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pharmacy</title>
+	<style>
+		header, footer {
+			text-align: center;
+		}
+
+		nav {
+			background-color: #0074D9;
+			overflow: hidden;
+			position: sticky;
+			top: 0;
+		}
+
+		nav a {
+			float: left;
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+		}
+
+		nav a:hover {
+			background-color: #3498DB;
+		}
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+		}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+
+		.product {
+			float: left;
+			margin: 20px;
+			padding: 10px;
+			border: 2px solid black;
+			box-shadow: 5px 5px grey;
+			background-color: white;
+			width: 300px;
+			height: 400px;
+			transition: all 0.5s ease;
+		}
+
+		.product:hover {
+			width: 320px;
+			height: 420px;
+			box-shadow: 10px 10px grey;
+		}
+
+		.product img {
+			width: 200px;
+			height: 200px;
+			margin: auto;
+			display: block;
+			padding: 10px;
+		}
+
+		.product button {
+			display: block;
+			margin: auto;
+			padding: 10px;
+			background-color: white;
+			color: black;
+			border: 2px solid black;
+			transition: all 0.5s ease;
+		}
+
+		.product button:hover {
+			background-color: rgb(250, 234, 230);
+			border-color: rgb(0, 255, 76);
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Pharmacy</h1>
+	</header>
+
+	<nav>
+		<a href="#home">Home</a>
+		<div class="dropdown">
+			<a href="#medicines">Our Medicines</a>
+			<div class="dropdown-content">
+				<a href="#">Fever</a>
+				<a href="#">Muscle Pains</a>
+				<a href="#">Cold &amp; Cough</a>
+			</div>
+		</div>
+		<div class="dropdown">
+			<a href="#healthcare">Health Care</a>
+			<div class="dropdown-content">
+				<a href="#">Baby Care</a>
+				<a href="#">Skin Care</a>
+				<a href="#">Home Care</a>
+				<a href="#">Personal Care</a>
+				<a href="#">Pet Care</a>
+			</div>
+		</div>
+		<a href="#labtest">Lab Test</a>
+	</nav>
+
+	<div>
+		<h2>Offers</h2>
+		<div class="product">
+			<img src="https://via.placeholder.com/200x200" alt="Product Image">
+			<h3>Product Name</h
