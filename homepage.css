@@ -1,0 +1,134 @@
+.contentbox img {
+    height: 400px;
+    width: 100%;
+    display: block;
+    position: relative;
+    border: 6px solid black;
+    animation-name: myfirst;
+    animation-duration: 40s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.container {
+    margin-top: 20px;
+    align-content: center;
+    display: flexbox;
+}
+
+.image1 {
+    height: 290px;
+    width: 240px;
+    padding: 5px;
+    display: fixed;
+    background-color: gainsboro;
+    box-shadow: 5px 10px 10px rgb(95, 88, 67);
+}
+
+.image1 img {
+    position: relative;
+    height: 150px;
+    width: 200px;
+    padding: 2px;
+    border: 3px solid #0c0f10;
+}
+
+
+.nav-item:hover {
+    border: 3px solid cornflowerblue;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 5px 10px 10px slategrey;
+}
+
+.FixedHeightContainer {
+    float: initial;
+    height: 560px;
+    width: 100%;
+}
+
+.Content {
+    height: 100%;
+    width: 100%;
+
+    margin: 0 auto;
+
+}
+
+@keyframes myfirst {
+    0% {
+        background: url("ani5.jpg");
+        background-size: cover;
+    }
+
+    25% {
+        background: url("ani4.jpg");
+        background-size: cover;
+    }
+
+    50% {
+        background: url("ani3.jpg");
+        background-size: cover;
+    }
+
+    75% {
+        background: url("ani2.png");
+        background-size: cover;
+    }
+
+    100% {
+        background: url("ani1.jpg");
+        background-size: cover;
+    }
+}
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: block;
+    padding-left: 15px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: rgb(13, 12, 12);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: darkgrey;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}

@@ -1,0 +1,25 @@
+.fixed {
+    height: 500px;
+    width: fit-content;
+}
+
+.Content {
+    height: 480px;
+    width: 520px;
+    overflow-y: scroll;
+}
+
+.item {
+    height: fit-content;
+    width: 500px;
+    margin-top: 20px;
+    display: fixed;
+    background-color: gainsboro;
+}
+
+img {
+    margin-top: 20px;
+    position: relative;
+    height: 460px;
+    width: 500px;
+}
